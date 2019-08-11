@@ -82,44 +82,7 @@
 		});
 	</script>
 
-	<script
-    src="https://www.paypal.com/sdk/js?client-id=AUssc-Ca-qTL_X51_kShYLHCYyPLifc2cXgWH25a1qAzqK8Kp9N-MbHh4mhIRkbs3XDvF24kU96gr9NJ&currency=USD">
-  </script>
-
-<script>
-
-	var monto = <?php if (isset($_POST["select_monto"])) { echo $_POST["select_monto"]; }else{ echo "1"; } ?>;      
-	// Render the PayPal button into #paypal-button-container
-	    paypal.Buttons({
-	        // Set up the transaction
-	        createOrder: function(data, actions) {
-	            return actions.order.create({
-	                purchase_units: [{
-	                    amount: {
-	                        value: monto
-	                    }
-	                }]
-	            });
-	        },
-
-	        // Finalize the transaction
-	        onApprove: function(data, actions) {
-	            return actions.order.capture().then(function(details) {
-	                // Show a success message to the buyer
-	                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-	            });
-	        }
-	    }).render('#botones_paypal');
-
-	    $(document).ready(function() {
-	      $("#select_monto option[value="+ monto +"]").attr("selected",true);
-
-	      $("#select_monto").change(function () { 
-	    $("#form_monto").submit();
-	  }); 
-    });
-    
-</script>
+	
 
 
 
@@ -275,48 +238,7 @@
 		</div>
 	</div>
 
-	<div class="container-fluid " style="background-color: #FAFAFA;" id="donaciones">
-		<div class="container">
-			<div class="row  aniated bounceIn"  >
-				<div class="col-12">
-					<h1 class="negrita flip-left" style="margin-top: 40px;">Dona, por favor</h1>
-					<p class="text-muted flip-left">Por favor, por favor, por favooooor</p>	
-				</div>
-			</div>
-			<div class="row" style="margin-top: 50px; margin-bottom:  50px;">
-	          <div class="col-12 col-sm-5 offset-sm-1 centrar donaciones_info">
-	          	<h5>Autocompletador Geografico fue programado por mi, y esta a tu disposicion y el de todos de manera gratuita. <br><br> ¡Ayudame a seguir creando herramientas de calidad gratis para todos!</h5>
-	          	<h5>Tu colaboracion, por muy grande o pequeña que sea, <b>¡me ayuda muchisimo!</b><br><br></h5>
-	          	<h5>Tu donacion se realizaria por paypal, es seguro y facil. Y puedes hacerlo con cualquier tarjeta visa o mastercard. <br><br>El monto seleccionado se cobraria al cambio en tu moneda local. </h5>
-	           
-	            </div>
-	            <div class="col-12 col-sm-5">
-
-		            <form action="plugin.php#donaciones" id="form_monto" method="post">
-		              <select id="select_monto" name="select_monto" style="width: 100%; max-width: 300px; margin: 0 auto; font-weight: bolder; border: 1px solid #C8C8C8; border-radius: 2px; padding: 5px; margin-bottom: 10px; background-color: transparent;"
-		                 required>
-		                <option value="1">1 Dollar</option>
-		                  <option value="5" >5 Dollars</option>
-		                  <option value="10">10 Dollars</option>
-		                  <option value="50" >50 Dollars</option>
-		                  <option value="100">100 Dollars</option>
-		              </select> 
-		            </form>		
-		            <p  id="botones_paypal" style="width: 100%; max-width: 300px; margin: 0 auto;"></p>	
-
-		            <!--Currency Converter widget by FreeCurrencyRates.com -->
-					<div id='gcw_mainF4Ve7CSdG' class='gcw_mainF4Ve7CSdG'></div>
-					<a id='gcw_siteF4Ve7CSdG' href='https://freecurrencyrates.com/es/'>FreeCurrencyRates.com</a>
-					<script>function reloadF4Ve7CSdG(){ var sc = document.getElementById('scF4Ve7CSdG');if (sc) sc.parentNode.removeChild(sc);sc = document.createElement('script');sc.type = 'text/javascript';sc.charset = 'UTF-8';sc.async = true;sc.id='scF4Ve7CSdG';sc.src = 'https://freecurrencyrates.com/es/widget-vertical-editable?iso=USDXUL&df=2&p=F4Ve7CSdG&v=fits&source=fcr&width=245&width_title=0&firstrowvalue=1&thm=dddddd,eeeeee,E78F08,F6A828,FFFFFF,cccccc,ffffff,1C94C4,000000&title=Conversor%20de%20divisas&tzo=180';var div = document.getElementById('gcw_mainF4Ve7CSdG');div.parentNode.insertBefore(sc, div);} reloadF4Ve7CSdG(); </script>
-					<!-- put custom styles here: .gcw_mainF4Ve7CSdG{}, .gcw_headerF4Ve7CSdG{}, .gcw_ratesF4Ve7CSdG{}, .gcw_sourceF4Ve7CSdG{} -->
-					<!--End of Currency Converter widget by FreeCurrencyRates.com -->
-	            </div> 
-	        </div>	
-		</div>
-
-
-		
-	</div>
+	
 
 	<footer class="footer  bg-dark " style="margin: 0px !important;">
 		<p > Creado por <a href="https://www.linkedin.com/in/andreina-riera/">Andreina Riera</a></p>
