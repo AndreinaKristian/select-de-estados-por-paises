@@ -1,0 +1,89 @@
+	.introduccion{
+		border-bottom: 1px solid #E9ECEF;
+	}
+	.introduccion p, .donaciones_info h5{
+		text-align: left;
+		font-size: 18px;
+		color: #383B3F;
+	}
+	.texto_introduccion{
+		padding-top: 100px;
+		padding-left: 50px;
+	}
+	header{
+		width: 100%;
+		height: 100%;
+	}
+	header h1{
+		color: orange;
+		font-weight: bold;
+		font-size: 50px;
+	}
+
+	.ejemplo{
+		padding: 0px 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("mapa.jpg");
+		vertical-align: center;
+		height: 100%;
+	}
+
+	.introduccion, body, .introduccion .row{
+		height: 100%;
+	}
+
+	.card{
+		max-width: 400px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 150px;
+		padding: 20px;
+	}
+
+	.card-title{
+		margin-top: -55px;
+		font-weight: bold;
+		font-size: 40px;
+		text-shadow: 3px 0 0 #fff, -3px 0 0 #fff, 0 3px 0 #fff, 0 -3px 0 #fff, 3px 3px #fff, -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff;
+	}
+
+	.boton_descargar{
+		font-weight: bold !important;
+		margin-top: 30px !important;
+	}
+	.numero{
+		font-weight: bold;
+		font-size: 25px;
+		color: #FFAB40;
+	}
+	.titulo{
+		font-size: 15px;
+		margin-right: 5px;
+		font-weight: bold;
+	}
+	.container{
+		border-bottom: 1px solid #E9ECEF;
+		padding-bottom: 20px;
+	}
+	#donaciones{
+		margin-top: 100px;
+		text-align: center;
+	}
+
+	.negrita{
+		font-weight: bolder;
+	}
+
+	.centrar{
+		text-align: center;
+	}
+
+
+	footer p{
+		text-align: right; color: white; font-weight: bolder; padding: 20px;
+	}
+	footer p a, footer p a:hover{
+		color: white;
+	}
