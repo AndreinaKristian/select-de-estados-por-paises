@@ -2,6 +2,6 @@ Autocompletador Geograficoes un pequeño plugin diseñado para el autocompletado
 
 Gratis, facil, y rapido
 
-Toda la documentacion y ejemplos esta en https://autocompletadorgeografico.000webhostapp.com/
+Toda la documentacion y ejemplos esta en http://autocompletadorgeografico.epizy.com/?i=1
 
-¡Select geografico es un plugin pequeño pero eficaz, si te ha sido util podrias invitarme un cafe! Tu donacion me seria de gran ayuda
+¡Select geografico es un plugin pequeño pero eficaz
